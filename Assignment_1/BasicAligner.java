@@ -1,4 +1,4 @@
-/*  Student ID: V00816592
+/*  
  *  Date: 05/28/15
  *  Program Name: BasicAligner.java
  *  Program Description: BasicAligner.java implements the aliger interface,

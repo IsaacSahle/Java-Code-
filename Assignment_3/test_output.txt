@@ -1,0 +1,107 @@
+/*  
+ *  Date: 06/30/15
+ *  Program Name: WordList.java
+ *  Program Description: Methods that do operations on the insatntiated linked list
+ */
+
+Test #: Test 1
+Description: Tests behavior of isEmpty
+Input: if(list.isEmpty())
+Output: Test 1 (isEmpty): passed
+		Test 1 (isEmpty): FAILED
+
+Test #: Test 2
+Description: Tests behavior of length with empty list
+Input: if(list.getLength() == 0)
+Output: Test 2 (length): passed
+		Test 2 (length): FAILED
+
+Test #: Test 3
+Description: Tests behavior of length with one item in list
+Input: if(list.getLength() == 1)
+Output: Test 3 (length): passed
+		Test 3 (length): FAILED
+
+Test #: Test 4
+Description: Test behavior of retrieve of a single item
+Input:	if(result.equals(one))
+Output: Test 4 (retrieve): passed
+		Test 4 (retrieve): FAILED
+
+Test #: Test 5
+Description: Tests behavior of insert of two items
+Input: if(list.retrieve(0).equals(three) && list.retrieve(1).equals(two) && list.retrieve(2).equals(one)) 
+Output: Test 5 (insert): passed
+		Test 5 (insert): FAILED
+
+Test #: Test 6
+Description: Test behavior when removing node from head 
+Input: if(list.retrieve(0).equals(two))
+Output: Test 6 (removeHead): passed
+		Test 6 (removeHead): FAILED
+
+Test #: Test 7
+Description: Test behavior when retrieving from index < 0
+Input: if(list.retrieve(-100) == null)
+Output: Test 7 (retrieve item for index < 0): passed
+		Test 7 (retrieve item for index < 0): FAILED	
+
+Test #: Test 8
+Description: Test behavior when retrieving something not in list
+Input: if(list.remove(one) == null)
+Output: Test 8 (retrieve item not in list): passed
+		Test 8 (retrieve item not in list): FAILED	
+
+
+/*  Program Name: Anagrammer.java
+ *  Program Description: Anagrammer class contains methods to compute and print to console all 
+ *	possible anagrams from inputed dictionary, phrase, and maximum number of words in anagram    
+ */
+
+Test #: Test 1
+Description: Test if constructor properyly discards words in dictionary that are not possibilities of anagrams
+Input: if (test.dictionary.length == 6) 
+Output: Test 1 (dictionary refining): passed
+		Test 1 (dictionary refining): FAILED
+
+Test #: Test 2
+Description: Test if linked list is initialized properly   
+Input: if (test.anagramWords.getLength() == 0)
+Output: Test 2 (linked list initialized): passed
+		Test 2 (linked list initialized): FAILED
+
+Test #: Test 3
+Description: Test if instance variable phraseO has the correct letter frequency of the original phrase 
+Input: if (test.phraseO.contains(p))
+Output: Test 3 (phrase object initialized): passed
+		Test 3 (phrase object initialized): FAILED
+
+Test #: Test 4
+Description: Test if generate computes all anagrams and prints n! ways
+Input:	if (test.count == 6)
+Output: Test 4 (computing possible anagrams): passed
+		Test 4 (computing possible anagrams): FAILED
+
+Test #: Test 5
+Description: Test if changing maxWord creates different anagrams
+Input:  if (test1.count == 0) 
+Output: Test 5 (computing possible anagrams with different maxWords): passed
+		Test 5 (computing possible anagrams with different maxWords): FAILED
+
+Test #: Test 6
+Description: Test generate anagrams on a empty dictionary 
+Input:  if (test2.count == 0)
+Output: Test 6 (computing anagram on empty dictionary): passed
+		Test 6 (computing anagram on empty dictionary): FAILED
+
+Test #: Test 7
+Description: Test generate on dictionary with no possible anagrams 
+Input:  if (test3.count == 0)
+Output: Test 7 (computing anagram on dictionary with no possible anagrams): passed
+		Test 7 (computing anagram on dictionary with no possible anagrams): FAILED	
+
+Test #: Test 8
+Description: Test generate on dictionary with all the same words
+Input: if (test4.count == 0) 
+Output: Test 8 (computing anagram on dictionary with same possible anagrams): passed
+		Test 8 (computing anagram on dictionary with same possible anagrams): FAILED	

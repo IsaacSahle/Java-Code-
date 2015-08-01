@@ -1,0 +1,84 @@
+/*  Student ID: V00816592
+ *  Date: 07/17/15
+ *  Program Name: BSTRefBased.java 
+ */
+
+Test #: Test 1
+Description: Test behavior inserting in bst
+Input: t.getRootItem().getWord().equals("humpty")
+Output: Test 1: inserting 'humpty' -- passed
+		Test 1: inserting 'humpty' -- FAILED
+
+Test #: Test 2
+Description: Test behavior inserting three items in bst
+Input: t.getRootItem().getWord().equals("humpty")
+	   t.getRootItem().getWord().equals("dumpty")
+	   t.getRootItem().getWord().equals("sat")
+Output: Test 2: inserting 'humpty', 'dumpty', 'sat' -- passed
+		Test 2: inserting 'humpty', 'dumpty', 'sat' -- FAILED
+
+Test #: Test 3
+Description: Test behavior of retrieve
+Input: t.retrieve("humpty").getWord().equals("humpty")
+Output: Test 3: retrieving 'humpty' -- passed 
+		Test 3: retrieving 'humpty' -- FAILED
+
+Test #: Test 4
+Description:Test behavior of retrieve from a leaf node
+Input: t.detachRightSubtree().detachLeftSubtree().getRoot() == null	
+Output: Test 4: retrieving from leaf node -- passed 
+		Test 4: retrieving from leaf node -- FAILED
+
+Test #: Test 5
+Description: Test behavior of retrieve from empty tree  
+Input: t.retrieve("") == null
+Output: Test 5: retrieving form empty list -- passed 
+		Test 5: retrieving form empty list -- FAILED
+
+Test #: Test 6
+Description: Test behavior of delete from empty tree 
+Input: t.delete("") 
+	   t.isEmpty()
+Output: Test 6: deleting from empty list -- passed
+		Test 6: deleting from empty list -- FAILED
+
+Test #: Test 7
+Description: Test behavior of delete 
+Input:  t.insert("humpty")
+        t.delete("humpty")
+        t.isEmpty()
+Output: Test 7: deleting 'humpty' -- passed
+		Test 7: deleting 'humpty' -- FAILED
+
+Test #: Test 8
+Description: Test behavior of delete on node with two children
+Input: t.getRootItem().getWord().equals("sat") && t.detachLeftSubtree().getRootItem().getWord().equals("dumpty") 
+Output: Test 8: deleting node with two children -- passed
+		Test 8: deleting node with two children -- FAILED
+
+/* 
+ *  Program Name: BSTIterator.java 
+ */
+
+Test #: Test 1
+Description: Test behavior of setInorder
+Input: it.next().getWord().equals("dumpty") && it.next().getWord().equals("humpty")
+Output: Test 1: set Inorder  -- passed
+		Test 1: set Inorder  -- FAILED
+
+Test #: Test 2
+Description: Test behavior of setPreorder
+Input: it.next().getWord().equals("humpty") && it.next().getWord().equals("dumpty")
+Output: Test 2: set Preorder  -- passed
+		Test 2: set Preorder  -- FAILED
+
+Test #: Test 3
+Description: Test behavior of setPostorder
+Input: it.next().getWord().equals("dumpty") && it.next().getWord().equals("sat") && it.next().getWord().equals("humpty")
+Output: Test 3: set Postorder  -- passed 
+		Test 3: set Postorder  -- FAILED
+
+
+
+
+					

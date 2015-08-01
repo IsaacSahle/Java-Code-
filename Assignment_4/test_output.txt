@@ -1,0 +1,59 @@
+/*  Student ID: V00816592
+ *  Date: 07/17/15
+ *  Program Name: StringStackRefBased.java 
+ */
+
+Test #: Test 1
+Description: Test behavior after initializing stack
+Input: if(test.isEmpty())
+Output: Test 1 (isEmpty): passed
+		Test 1 (isEmpty): FAILED
+
+Test #: Test 2
+Description: Test behavior of height
+Input: if(test.height() == 0)
+Output: Test 2 (height): passed
+		Test 2 (height): FAILED
+
+Test #: Test 3
+Description: Test behavior popping from empty list
+Input: if(compare) //if exception was thrown
+Output: Test 3 (pop empty list): passed
+		Test 3 (pop empty list): FAILED
+
+Test #: Test 4
+Description: Test behavior of peek
+Input:	if(compare) //if exception was thrown
+Output: Test 4 (peek at empty list): passed
+		Test 4 (peek at empty list): FAILED
+
+Test #: Test 5
+Description: Test behavior after pushing one item on list
+Input: if(!(test.isEmpty()))  
+Output: Test 5 (push one item): passed
+		Test 5 (push one item): FAILED
+
+Test #: Test 6
+Description: Test behavior after pushing two more items on list 
+Input: if(test.height() == 3)
+Output: Test 6 (push two more items): passed
+		Test 6 (push two more items): FAILED
+
+Test #: Test 7
+Description: Test behavior of pop 
+Input: if(compare && test.height() == 2) //if exception wasnt thrown and item removed
+Output: Test 7 (pop item): passed
+		Test 7 (pop item): FAILED
+
+Test #: Test 8
+Description: Test behavior of peek
+Input: if(temp.equals("Emily")) //"Emily" is the top of the current stack
+Output: Test 8 (peek at item): passed
+		Test 8 (peek at item): FAILED	
+
+Test #: Test 9
+Description: Test behavior of popAll
+Input: if(test.isEmpty())
+Output: Test 9 (popAll items from list): passed
+		Test 9 (popAll items from list): FAILED	
+					
